@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>التبرع لزكاة الفطر</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: url("https://www.as-salaamfoundation.co.uk/wp-content/uploads/2025/03/muslim-holy-month-ramadan-kareem-2025-02-20-21-17-11-utc.webp"); /* Replace with a Ramadan-themed background image */
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 30px 0;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-family: "Amiri", serif;
+        color: #f1c40f;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 25px;
+        font-family: "Amiri", serif;
+        color: #f1c40f;
+        margin-top: 10px;
+      }
+
+      /* Paragraph Styling */
+      p {
+        align-content: center;
+        max-width: 800px;
+        font-size: 20px;
+        margin: 0 auto 30px auto;
+        color: #f1c40f;
+        text-align: center;
+      }
+
+      /* Form Styling */
+      .form-container {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 40px;
+        border-radius: 15px;
+        display: inline-block;
+        max-width: 500px;
+        width: 90%;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      label {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      input[type="number"] {
+        padding: 12px;
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        color: #333;
+      }
+
+      input[type="submit"] {
+        padding: 18px 35px;
+        font-size: 20px;
+        color: #fff;
+        background-color: #28a745;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #218838;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+
+        .form-container {
+          width: 90%;
+          padding: 25px;
+        }
+      }
+
+      /* Islamic-themed Images */
+      .ramadan-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+        border-radius: 10px;
+      }
+    </style>
+    <script>
+      // Function to update the amount field when the user enters a value
+      function updateAmount() {
+        var amount = document.getElementById("amountInput").value;
+        var paypalLink = "https://paypal.me/zakatalfitr1446?amount=" + amount;
+        document.getElementById("paypalLink").href = paypalLink;
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>التبرع لزكاة الفطر</h1>
+      <h2>تبرعوا الآن زكاة الفطر لتمكين المحتاجين.</h2>
+      <p>
+        <strong>زكاة الفطر</strong> هي صدقة واجبة على كل مسلم قبل عيد الفطر، وهي
+        تهدف إلى تطهير الصيام وإعانة الأسر الفقيرة على العيش بكرامة في أيام
+        العيد. تساهم تبرعاتكم في تحسين حياة الكثير من الأسر التي تواجه تحديات
+        كبيرة، وتساعد في تحقيق العدالة الاجتماعية وتحسين الظروف المعيشية للأسر
+        المحتاجة.
+      </p>
+    </header>
+
+    <div class="form-container">
+      <label for="amountInput">المبلغ المراد التبرع به:</label>
+      <input
+        type="number"
+        id="amountInput"
+        name="amount"
+        min="1"
+        placeholder="أدخل المبلغ"
+        required
+      />
+
+      <a id="paypalLink" href="#" onclick="updateAmount()">
+        <input type="submit" value="تبرع الآن" />
+      </a>
+    </div>
+
+    <footer>
+      <p style="font-size: large">تبرعات زكاة الفطر</p>
+    </footer>
+  </body>
+</html>
+
